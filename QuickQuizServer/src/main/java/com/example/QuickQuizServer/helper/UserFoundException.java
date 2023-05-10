@@ -1,0 +1,9 @@
+package com.example.QuickQuizServer.helper;
+
+public class UserFoundException extends Exception{
+    public UserFoundException(){
+        super("User with this username is already there in database!! try with another username");
+
+    }
+    public UserFoundException(String msg) {super(msg);}
+}
